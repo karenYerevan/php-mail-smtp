@@ -8,8 +8,8 @@
 
 	$host    = "vm10461.vps.agava.net"; // your host example: vagrant.vps.net
 	$port    =  "25"; // your port: 25
-	$user    = "no-reply@starinviter.com"; // username for e-mail account example: no-reply@gmail.com
-	$pass    = "gang123DS"; // password for e-mail account example: xxxxxxx
+	$user    = "no-reply@domain_name.com"; // username for e-mail account example: no-reply@gmail.com
+	$pass    = "password"; // password for e-mail account example: xxxxxxx
 	$headers = array("From"=> $from, "To"=>$to, "Subject"=>$subject,"Content-Type"=>"text/html; charset=UTF-8");
 	$smtp    = @Mail::factory("smtp", array("host"=>$host, "port"=>$port, "auth"=> true, "username"=>$user, "password"=>$pass));
 	$mail    = @$smtp->send($to, $headers, $body);
