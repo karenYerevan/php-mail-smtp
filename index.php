@@ -2,7 +2,7 @@
 	
 	require_once "Mails/Mail.php";
 	$subject = "Hello world";
-	$to      = "karenkostanyan89@gmailc.om"
+	$to      = "mail"
 	$from    = "somemail@mail.com"; // send e-mail address
 	$body    = $message; // your message. it can be html 
 
